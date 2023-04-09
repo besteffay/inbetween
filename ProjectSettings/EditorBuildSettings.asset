@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6d4f3b0e2af951a41b3505e3a527f8ed
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 783e0760f1bd66643aa253875d03cc11
+  - enabled: 1
+    path: Assets/Scenes/Maze1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Maze2.unity
+    guid: 5088300148f3f7d40afa1b68fd4bf76f
+  - enabled: 1
+    path: Assets/Scenes/Maze3.unity
+    guid: 0cf8c8486eb123d4288f876736b2a6be
+  - enabled: 1
+    path: Assets/Scenes/ScalesScene.unity
+    guid: ffbb8f702829ba24590bfbc6ca3504af
+  - enabled: 1
+    path: Assets/Scenes/LimboEnding.unity
+    guid: 8626246cf92efd34da2aeaf27e326dea
+  m_configObjects: {}
