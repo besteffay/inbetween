@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public bool keyCollected = false;
     float speed = 5.0f;
     public int ending = 0;
+    public static bool bagInMaze2 = false;
 
     public GameObject scalesEmpty;
     public GameObject scalesFull;
@@ -81,7 +82,10 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == "Shadows")
         {
             deathSound.Play();
-            scoreBags = 0;
+            if(SceneManager.GetActiveScene().name == "Maze3" && bagInMaze2 == true)
+                scoreBags = 1;
+            else
+                scoreBags = 0;
             StartCoroutine(RestartScene());
         }
 
@@ -89,6 +93,9 @@ public class Player : MonoBehaviour
         {
             bagUpSound.Play();
             scoreBags++;
+            if(SceneManager.GetActiveScene().name == "Maze2" && scoreBags == 1)
+                bagInMaze2 = true;
+            Debug.Log(bagInMaze2);
             Destroy(collision.gameObject);
             Debug.Log("Bags "+scoreBags);
         }

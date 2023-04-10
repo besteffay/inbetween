@@ -301,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88375905}
   - component: {fileID: 88375904}
+  - component: {fileID: 88375906}
   m_Layer: 0
   m_Name: ScalesBackground
   m_TagString: Untagged
@@ -398,6 +399,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &88375906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88375903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bb757e909b4a34e89971c479ce9da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCollected: 0
+  ending: 0
+  scalesEmpty: {fileID: 0}
+  scalesFull: {fileID: 0}
+  bagOne: {fileID: 0}
+  bagTwo: {fileID: 0}
+  bagThree: {fileID: 0}
+  endingBackground: {fileID: 0}
+  endingLogo: {fileID: 0}
+  keySound: {fileID: 0}
+  bagUpSound: {fileID: 0}
+  bagDownSound: {fileID: 0}
+  closedGateSound: {fileID: 0}
+  openGateSound: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!1 &100458770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,7 +5924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6953916291008134376, guid: ed263d17a847fc3409b8ddddcb278600, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6953916291008134376, guid: ed263d17a847fc3409b8ddddcb278600, type: 3}
       propertyPath: m_AnchorMax.x
